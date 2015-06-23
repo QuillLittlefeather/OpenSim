@@ -1,5 +1,9 @@
 Welcome to OpenSim!
 
+#Custom Changes
+This Branch of OpenSim Contains Extended Ossl Functions and other changes
+
+
 # Overview
 
 OpenSim is a BSD Licensed Open Source project to develop a functioning
@@ -86,29 +90,12 @@ http://192.168.1.2:9000)
 To login, use the avatar details that you gave for your estate ownership or the
 one you set up using the "create user" command.
 
-# Bug reports
 
-In the very likely event of bugs biting you (err, your OpenSim) we
-encourage you to see whether the problem has already been reported on
-the [OpenSim mantis system](http://opensimulator.org/mantis/main_page.php).
-
-If your bug has already been reported, you might want to add to the
-bug description and supply additional information.
-
-If your bug has not been reported yet, file a bug report ("opening a
-mantis"). Useful information to include:
- * description of what went wrong
- * stack trace
- * OpenSim.log (attach as file)
- * OpenSim.ini (attach as file)
- * if running under mono: run OpenSim.exe with the "--debug" flag:
-
-       mono --debug OpenSim.exe
 
 # More Information on OpenSim
 
 More extensive information on building, running, and configuring
-OpenSim, as well as how to report bugs, and participate in the OpenSim
+OpenSim, and participate in the OpenSim
 project can always be found at http://opensimulator.org.
 
 Thanks for trying OpenSim, we hope it is a pleasant experience.
