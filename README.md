@@ -100,4 +100,29 @@ project can always be found at http://opensimulator.org.
 
 Thanks for trying OpenSim, we hope it is a pleasant experience.
 
+#ChangeLog
+Added: osEncodeSHA256  (Threat level None)
+
+Added: osDecodeSHA256  (Threat level None)
+
+Added: osDerezObject   (Threat level high)
+   
+Added: osRandomOrg     (Threat level None)
+
+Added: MessageUrl 
+
+#ChangeLog How to use
+
+string osEncodeSHA256("text to encrypt","password");
+string osDecodeSHA256("encoded text","password");
+integer osRandomOrg(min,max);
+
+MessageUrl is used to generate the welcome message from a web script
+If MessageUrl is enabled and set then this will override the WelcomeMessage option in the ini
+Note changing the welcome message text in the ini or the webserver no longer requires you to reset 
+opensim/robust as it looks it up on every login. change between MessageUrl and WelcomeMessage 
+Requires restarting
+	
+If you add <USERNAME> anywhere anywhere in the welcome message in the ini or webserver it will replace it ;with the first and last name of the user logging in
+
 
