@@ -113,9 +113,11 @@ Added: MessageUrl
 
 #ChangeLog How to use
 
-string osEncodeSHA256("text to encrypt","password");
-string osDecodeSHA256("encoded text","password");
-integer osRandomOrg(min,max);
+string osEncodeSHA256("text to encrypt","password")
+
+string osDecodeSHA256("encoded text","password")
+
+integer osRandomOrg(min,max)
 
 MessageUrl is used to generate the welcome message from a web script
 If MessageUrl is enabled and set then this will override the WelcomeMessage option in the ini
