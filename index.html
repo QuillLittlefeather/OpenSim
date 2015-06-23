@@ -1,0 +1,187 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Opensim by QuillLittlefeather</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Opensim</h1>
+        <p class="header">Custom OpenSim </p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/QuillLittlefeather/OpenSim/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/QuillLittlefeather/OpenSim/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/QuillLittlefeather/OpenSim">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/QuillLittlefeather">QuillLittlefeather</a></p>
+
+
+      </header>
+      <section>
+        <p>Welcome to OpenSim!</p>
+
+<h1>
+<a id="custom-changes" class="anchor" href="#custom-changes" aria-hidden="true"><span class="octicon octicon-link"></span></a>Custom Changes</h1>
+
+<p>This Branch of OpenSim Contains Extended Ossl Functions and other changes</p>
+
+<h1>
+<a id="overview" class="anchor" href="#overview" aria-hidden="true"><span class="octicon octicon-link"></span></a>Overview</h1>
+
+<p>OpenSim is a BSD Licensed Open Source project to develop a functioning
+virtual worlds server platform capable of supporting multiple clients
+and servers in a heterogeneous grid structure. OpenSim is written in
+C#, and can run under Mono or the Microsoft .NET runtimes.</p>
+
+<p>This is considered an alpha release.  Some stuff works, a lot doesn't.
+If it breaks, you get to keep <em>both</em> pieces.</p>
+
+<h1>
+<a id="compiling-opensim" class="anchor" href="#compiling-opensim" aria-hidden="true"><span class="octicon octicon-link"></span></a>Compiling OpenSim</h1>
+
+<p>Please see BUILDING.md if you downloaded a source distribution and 
+need to build OpenSim before running it.</p>
+
+<h1>
+<a id="running-opensim-on-windows" class="anchor" href="#running-opensim-on-windows" aria-hidden="true"><span class="octicon octicon-link"></span></a>Running OpenSim on Windows</h1>
+
+<p>You will need .NET 4.0 installed to run OpenSimulator.</p>
+
+<p>We recommend that you run OpenSim from a command prompt on Windows in order
+to capture any errors.</p>
+
+<p>To run OpenSim from a command prompt</p>
+
+<ul>
+<li>cd to the bin/ directory where you unpacked OpenSim</li>
+<li>run OpenSim.exe</li>
+</ul>
+
+<p>Now see the "Configuring OpenSim" section</p>
+
+<h1>
+<a id="running-opensim-on-linux" class="anchor" href="#running-opensim-on-linux" aria-hidden="true"><span class="octicon octicon-link"></span></a>Running OpenSim on Linux</h1>
+
+<p>You will need Mono &gt;= 2.10.8.1 to run OpenSimulator.  On some Linux distributions you
+may need to install additional packages.  See <a href="http://opensimulator.org/wiki/Dependencies">http://opensimulator.org/wiki/Dependencies</a>
+for more information.</p>
+
+<p>To run OpenSim, from the unpacked distribution type:</p>
+
+<ul>
+<li>cd bin</li>
+<li>mono OpenSim.exe</li>
+</ul>
+
+<p>Now see the "Configuring OpenSim" section</p>
+
+<h1>
+<a id="configuring-opensim" class="anchor" href="#configuring-opensim" aria-hidden="true"><span class="octicon octicon-link"></span></a>Configuring OpenSim</h1>
+
+<p>When OpenSim starts for the first time, you will be prompted with a
+series of questions that look something like:</p>
+
+<pre><code>[09-17 03:54:40] DEFAULT REGION CONFIG: Simulator Name [OpenSim Test]:
+</code></pre>
+
+<p>For all the options except simulator name, you can safely hit enter to accept
+the default if you want to connect using a client on the same machine or over
+your local network.</p>
+
+<p>You will then be asked "Do you wish to join an existing estate?".  If you're
+starting OpenSim for the first time then answer no (which is the default) and
+provide an estate name.</p>
+
+<p>Shortly afterwards, you will then be asked to enter an estate owner first name,
+last name, password and e-mail (which can be left blank).  Do not forget these
+details, since initially only this account will be able to manage your region
+in-world.  You can also use these details to perform your first login.</p>
+
+<p>Once you are presented with a prompt that looks like:</p>
+
+<pre><code>Region (My region name) #
+</code></pre>
+
+<p>You have successfully started OpenSim.</p>
+
+<p>If you want to create another user account to login rather than the estate
+account, then type "create user" on the OpenSim console and follow the prompts.</p>
+
+<p>Helpful resources:</p>
+
+<ul>
+<li><a href="http://opensimulator.org/wiki/Configuration">http://opensimulator.org/wiki/Configuration</a></li>
+<li><a href="http://opensimulator.org/wiki/Configuring_Regions">http://opensimulator.org/wiki/Configuring_Regions</a></li>
+</ul>
+
+<h1>
+<a id="connecting-to-your-opensim" class="anchor" href="#connecting-to-your-opensim" aria-hidden="true"><span class="octicon octicon-link"></span></a>Connecting to your OpenSim</h1>
+
+<p>By default your sim will be available for login on port 9000.  You can login by
+adding -loginuri <a href="http://127.0.0.1:9000">http://127.0.0.1:9000</a> to the command that starts Second Life
+(e.g. in the Target: box of the client icon properties on Windows).  You can
+also login using the network IP address of the machine running OpenSim (e.g.
+<a href="http://192.168.1.2:9000">http://192.168.1.2:9000</a>)</p>
+
+<p>To login, use the avatar details that you gave for your estate ownership or the
+one you set up using the "create user" command.</p>
+
+<h1>
+<a id="more-information-on-opensim" class="anchor" href="#more-information-on-opensim" aria-hidden="true"><span class="octicon octicon-link"></span></a>More Information on OpenSim</h1>
+
+<p>More extensive information on building, running, and configuring
+OpenSim, and participate in the OpenSim
+project can always be found at <a href="http://opensimulator.org">http://opensimulator.org</a>.</p>
+
+<p>Thanks for trying OpenSim, we hope it is a pleasant experience.</p>
+
+<h1>
+<a id="changelog" class="anchor" href="#changelog" aria-hidden="true"><span class="octicon octicon-link"></span></a>ChangeLog</h1>
+
+<p>Added: osEncodeSHA256  (Threat level None)</p>
+
+<p>Added: osDecodeSHA256  (Threat level None)</p>
+
+<p>Added: osDerezObject   (Threat level high)</p>
+
+<p>Added: osRandomOrg     (Threat level None)</p>
+
+<p>Added: MessageUrl </p>
+
+<h1>
+<a id="changelog-how-to-use" class="anchor" href="#changelog-how-to-use" aria-hidden="true"><span class="octicon octicon-link"></span></a>ChangeLog How to use</h1>
+
+<p>string osEncodeSHA256("text to encrypt","password")</p>
+
+<p>string osDecodeSHA256("encoded text","password")</p>
+
+<p>integer osRandomOrg(min,max)</p>
+
+<p>MessageUrl is used to generate the welcome message from a web script
+If MessageUrl is enabled and set then this will override the WelcomeMessage option in the ini
+Note changing the welcome message text in the ini or the webserver no longer requires you to reset 
+opensim/robust as it looks it up on every login. change between MessageUrl and WelcomeMessage 
+Requires restarting</p>
+
+<p>If you add  anywhere anywhere in the welcome message in the ini or webserver it will replace it ;with the first and last name of the user logging in</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+		
+  </body>
+</html>
